@@ -1,0 +1,20 @@
+{
+  "hookWebView": [
+    {
+      "Class_WebView": "android.webkit.WebView",
+      "Method_getSettings": "getSettings",
+      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_loadUrl": "loadUrl",
+      "Method_setWebViewClient": "setWebViewClient"
+    }
+  ],
+  "hookWebViewClient": [
+    {
+      "Class_WebViewClient": "android.webkit.WebViewClient",
+      "Method_onPageFinished": "onPageFinished",
+      "Method_evaluateJavascript": "evaluateJavascript",
+      "Class_ValueCallback": "android.webkit.ValueCallback"
+    }
+  ]
+}
