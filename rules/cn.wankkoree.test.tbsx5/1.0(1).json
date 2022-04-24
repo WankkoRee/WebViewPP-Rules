@@ -1,0 +1,22 @@
+{
+  "hookWebView": [
+    {
+      "name": "标准 TBS_X5 Hook 点",
+      "Class_WebView": "com.tencent.smtt.sdk.WebView",
+      "Method_getSettings": "getSettings",
+      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_loadUrl": "loadUrl",
+      "Method_setWebViewClient": "setWebViewClient"
+    }
+  ],
+  "hookWebViewClient": [
+    {
+      "name": "标准 TBS_X5 Client Hook 点",
+      "Class_WebViewClient": "com.tencent.smtt.sdk.WebViewClient",
+      "Method_onPageFinished": "onPageFinished",
+      "Method_evaluateJavascript": "evaluateJavascript",
+      "Class_ValueCallback": "com.tencent.smtt.sdk.ValueCallback"
+    }
+  ]
+}
