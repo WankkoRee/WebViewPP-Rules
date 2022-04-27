@@ -1,0 +1,31 @@
+{
+  "hookWebView": [
+    {
+      "name": "标准 UC_U4 Hook 点",
+      "Class_WebView": "com.uc.webview.export.WebView",
+      "Method_getSettings": "getSettings",
+      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_loadUrl": "loadUrl",
+      "Method_setWebViewClient": "setWebViewClient"
+    }
+  ],
+  "hookWebViewClient": [
+    {
+      "name": "标准 UC_U4 Client Hook 点",
+      "Class_WebView": "com.uc.webview.export.WebView",
+      "Class_WebViewClient": "com.uc.webview.export.WebViewClient",
+      "Method_onPageFinished": "onPageFinished",
+      "Method_evaluateJavascript": "evaluateJavascript",
+      "Class_ValueCallback": "android.webkit.ValueCallback"
+    }
+  ],
+  "replaceNebulaUCSDK": [
+    {
+      "name": "标准 UC_U4 内核替换 Hook 点",
+      "Class_UcServiceSetup": "com.alipay.mobile.nebulauc.impl.UcServiceSetup",
+      "Method_updateUCVersionAndSdcardPath": "updateUCVersionAndSdcardPath",
+      "Field_sInitUcFromSdcardPath": "sInitUcFromSdcardPath"
+    }
+  ]
+}
