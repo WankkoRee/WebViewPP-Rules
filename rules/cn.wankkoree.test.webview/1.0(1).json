@@ -12,7 +12,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "标准 WebViewClient Hook 点",
+      "name": "标准 WebView Client Hook 点",
       "Class_WebView": "android.webkit.WebView",
       "Class_WebViewClient": "android.webkit.WebViewClient",
       "Method_onPageFinished": "onPageFinished",
