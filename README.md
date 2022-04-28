@@ -69,7 +69,32 @@
      "Field_sInitUcFromSdcardPath": "sInitUcFromSdcardPath"
    }
    ```
+4. `hookCrossWalk`
+   ```json
+   {
+     "name": "标准 CrossWalk Hook 点",
+     "Class_XWalkView": "org.xwalk.core.XWalkView",
+     "Method_getSettings": "getSettings",
+     "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+     "Method_loadUrl": "loadUrl",
+     "Method_setResourceClient": "setResourceClient",
+     "Class_XWalkPreferences": "org.xwalk.core.XWalkPreferences",
+     "Method_setValue": "setValue"
+   }
+   ```
 其他内核 demo 可参考如下文件：
 1. [TBS X5](rules/cn.wankkoree.test.tbsx5)
 2. [UC U4](rules/com.mpaas.demo)
 3. [CrossWalk](rules/cn.wankkoree.test.crosswalk)
+
+## 一些使用条件
+
+1. 如需开启远程调试，请确保以下条件满足其中之一:
+   1. 对于 **WebView** 、 **TBS X5** ，至少有一个`hookWebView`规则生效。
+   2. 对于 **UC U4** ，至少有一个`replaceNebulaUCSDK`规则生效，已开启`UC 调试内核`注入，且选择版本与目标页面所用的内核版本一致。
+   3. 对于 **CrossWalk** ，至少有一个`hookCrossWalk`规则生效。
+2. 如需注入`vConsole`，请确保以下条件满足所有：
+   1. 至少有一个`hookWebViewClient`规则生效。
+   2. 如果目标页面未开启`javascript 执行`功能，请确保 **#1 条件(远程调试)** 满足。
+   3. 已开启`vConsole`注入，且选择版本支持目标页面所用的内核版本。
+   4. 目标页面使用了`WebViewClient`接口。
