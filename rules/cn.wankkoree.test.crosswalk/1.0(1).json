@@ -2,7 +2,7 @@
   "hookCrossWalk": [
     {
       "name": "标准 CrossWalk Hook 点",
-      "Class_WebView": "org.xwalk.core.XWalkView",
+      "Class_XWalkView": "org.xwalk.core.XWalkView",
       "Method_getSettings": "getSettings",
       "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
       "Method_loadUrl": "loadUrl",
