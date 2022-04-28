@@ -69,4 +69,7 @@
      "Field_sInitUcFromSdcardPath": "sInitUcFromSdcardPath"
    }
    ```
-其他内核 demo 可参考 [TBS X5](rules/cn.wankkoree.test.tbsx5)、[UC U4](rules/com.mpaas.demo) 。
+其他内核 demo 可参考如下文件：
+1. [TBS X5](rules/cn.wankkoree.test.tbsx5)
+2. [UC U4](rules/com.mpaas.demo)
+3. [CrossWalk](rules/cn.wankkoree.test.crosswalk)
