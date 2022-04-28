@@ -16,7 +16,7 @@
       "name": "标准 CrossWalk Client Hook 点",
       "Class_WebView": "org.xwalk.core.XWalkView",
       "Class_WebViewClient": "org.xwalk.core.XWalkResourceClient",
-      "Method_onPageFinished": "onPageFinished",
+      "Method_onPageFinished": "onLoadFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "android.webkit.ValueCallback"
     }
