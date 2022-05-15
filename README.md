@@ -81,11 +81,19 @@
      "Class_XWalkPreferences": "org.xwalk.core.XWalkPreferences",
      "Method_setValue": "setValue"
    }
+5. `hookXWebPreferences`
+   ```json
+   {
+     "name": "标准 XWeb Preferences Hook 点",
+     "Class_XWebPreferences": "org.xwalk.core.Preferences",
+     "Method_setValue": "setValue"
+   }
    ```
-其他内核 demo 可参考如下文件：
-1. [TBS X5](rules/cn.wankkoree.test.tbsx5)
-2. [UC U4](rules/com.mpaas.demo)
-3. [CrossWalk](rules/cn.wankkoree.test.crosswalk)
+各内核 demo 可参考如下文件：
+1. [WebView](rules/cn.wankkoree.test.webview)
+2. [TBS X5](rules/cn.wankkoree.test.tbsx5)
+3. [UC U4](rules/com.mpaas.demo)
+4. [CrossWalk](rules/cn.wankkoree.test.crosswalk)
 
 ## 一些使用条件
 
