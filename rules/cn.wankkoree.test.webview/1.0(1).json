@@ -1,7 +1,7 @@
 {
   "hookWebView": [
     {
-      "name": "标准 WebView Hook 点",
+      "name": "标准 WebView 规则集 hookWebView",
       "Class_WebView": "android.webkit.WebView",
       "Method_getSettings": "getSettings",
       "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
@@ -12,7 +12,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "标准 WebView Client Hook 点",
+      "name": "标准 WebView 规则集 hookWebViewClient",
       "Class_WebView": "android.webkit.WebView",
       "Class_WebViewClient": "android.webkit.WebViewClient",
       "Method_onPageFinished": "onPageFinished",

@@ -1,7 +1,7 @@
 {
   "hookCrossWalk": [
     {
-      "name": "标准 CrossWalk Hook 点",
+      "name": "标准 CrossWalk 规则集 hookCrossWalk",
       "Class_XWalkView": "org.xwalk.core.XWalkView",
       "Method_getSettings": "getSettings",
       "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
@@ -13,7 +13,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "标准 CrossWalk Client Hook 点",
+      "name": "标准 CrossWalk 规则集 hookWebViewClient",
       "Class_WebView": "org.xwalk.core.XWalkView",
       "Class_WebViewClient": "org.xwalk.core.XWalkResourceClient",
       "Method_onPageFinished": "onLoadFinished",

@@ -1,7 +1,7 @@
 {
   "hookWebView": [
     {
-      "name": "标准 TBS_X5 Hook 点",
+      "name": "标准 TBS X5 规则集 hookWebView",
       "Class_WebView": "com.tencent.smtt.sdk.WebView",
       "Method_getSettings": "getSettings",
       "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
@@ -12,7 +12,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "标准 TBS_X5 Client Hook 点",
+      "name": "标准 TBS X5 规则集 hookWebViewClient",
       "Class_WebView": "com.tencent.smtt.sdk.WebView",
       "Class_WebViewClient": "com.tencent.smtt.sdk.WebViewClient",
       "Method_onPageFinished": "onPageFinished",

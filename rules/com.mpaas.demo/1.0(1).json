@@ -1,7 +1,7 @@
 {
   "hookWebView": [
     {
-      "name": "标准 UC_U4 Hook 点",
+      "name": "标准 UC U4 规则集 hookWebView",
       "Class_WebView": "com.uc.webview.export.WebView",
       "Method_getSettings": "getSettings",
       "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
@@ -12,7 +12,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "标准 UC_U4 Client Hook 点",
+      "name": "标准 UC U4 规则集 hookWebViewClient",
       "Class_WebView": "com.uc.webview.export.WebView",
       "Class_WebViewClient": "com.alipay.mobile.nebulauc.impl.UCWebViewClient",
       "Method_onPageFinished": "onPageFinished",
@@ -22,7 +22,7 @@
   ],
   "replaceNebulaUCSDK": [
     {
-      "name": "标准 UC_U4 内核替换 Hook 点",
+      "name": "标准 UC U4 规则集 replaceNebulaUCSDK",
       "Class_UcServiceSetup": "com.alipay.mobile.nebulauc.impl.UcServiceSetup",
       "Method_updateUCVersionAndSdcardPath": "updateUCVersionAndSdcardPath",
       "Field_sInitUcFromSdcardPath": "sInitUcFromSdcardPath"
