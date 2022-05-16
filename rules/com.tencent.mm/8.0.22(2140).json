@@ -2,7 +2,7 @@
   "hookXWebPreferences": [
     {
       "name": "微信 XWeb 规则集 hookXWebPreferences",
-      "Class_XWebPreferences": "org.xwalk.core.Preferences",
+      "Class_XWebPreferences": "org.xwalk.core.XWalkPreferences",
       "Method_setValue": "setValue"
     }
   ],
