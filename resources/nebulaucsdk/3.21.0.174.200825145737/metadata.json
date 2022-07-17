@@ -1,0 +1,17 @@
+{
+  "name": "nebulaucsdk - 3.21.0.174.200825145737",
+  "remark": "UC 调试内核 - 3.21.0.174.200825145737",
+  "versions": [
+    "arm64-v8a.so",
+    "armeabi-v7a.so"
+  ],
+  "hash": [
+    {
+      "version": "arm64-v8a.so",
+      "sha256": "74ece41c2fd86aa3e8da2c7c23797a37e37556b80b80d4071105ebc05922bc6b"
+    }, {
+      "version": "armeabi-v7a.so",
+      "sha256": "07881ea626b5ea33a2bb3a63ee697f143a8afb82d6b60877043a55d0f41338aa"
+    }
+  ]
+}
