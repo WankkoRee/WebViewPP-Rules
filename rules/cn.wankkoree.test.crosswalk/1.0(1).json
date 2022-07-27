@@ -22,7 +22,6 @@
       "require": 0,
       "Class_WebView": "org.xwalk.core.XWalkView",
       "Class_WebViewClient": "org.xwalk.core.XWalkResourceClient",
-      "Method_onPageStarted": "onLoadStarted",
       "Method_onPageFinished": "onLoadFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "android.webkit.ValueCallback"

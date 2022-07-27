@@ -21,7 +21,6 @@
       "require": 0,
       "Class_WebView": "com.tencent.smtt.sdk.WebView",
       "Class_WebViewClient": "com.tencent.smtt.sdk.WebViewClient",
-      "Method_onPageStarted": "onPageStarted",
       "Method_onPageFinished": "onPageFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "com.tencent.smtt.sdk.ValueCallback"

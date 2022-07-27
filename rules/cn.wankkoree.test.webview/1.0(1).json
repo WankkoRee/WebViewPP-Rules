@@ -21,7 +21,6 @@
       "require": 0,
       "Class_WebView": "android.webkit.WebView",
       "Class_WebViewClient": "android.webkit.WebViewClient",
-      "Method_onPageStarted": "onPageStarted",
       "Method_onPageFinished": "onPageFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "android.webkit.ValueCallback"

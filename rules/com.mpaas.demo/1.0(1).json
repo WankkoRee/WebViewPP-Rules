@@ -21,7 +21,6 @@
       "require": 0,
       "Class_WebView": "com.uc.webview.export.WebView",
       "Class_WebViewClient": "com.alipay.mobile.nebulauc.impl.UCWebViewClient",
-      "Method_onPageStarted": "onPageStarted",
       "Method_onPageFinished": "onPageFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "android.webkit.ValueCallback"
