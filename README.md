@@ -16,18 +16,27 @@
      "*在这填写内置 hook 方法名*": [
        {
          "name": "*在这里填写规则名*",
+         "version": *在这里填写规则版本号，格式为正整数，用于检查规则是否有更新*,
+         "remark": "*在这里填写规则的相关备注*",
+         "require": *在这里填写规则需要的最低模块版本号，格式为正整数*,
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          ...
        }, {
          "name": "*在这里填写规则名*",
+         "version": *在这里填写规则版本号，格式为正整数，用于检查规则是否有更新*,
+         "remark": "*在这里填写规则的相关备注*",
+         "require": *在这里填写规则需要的最低模块版本号，格式为正整数*,
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          ...
        }, {
          "name": "*在这里填写规则名*",
+         "version": *在这里填写规则版本号，格式为正整数，用于检查规则是否有更新*,
+         "remark": "*在这里填写规则的相关备注*",
+         "require": *在这里填写规则需要的最低模块版本号，格式为正整数*,
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
          "*在这里填写 hook 参数名*": "*在这里填写 hook 参数内容*",
@@ -46,6 +55,9 @@
    ```json
    {
      "name": "标准 WebView Hook 点",
+     "version": 1,
+     "remark": "",
+     "require": 0,
      "Class_WebView": "android.webkit.WebView",
      "Method_getSettings": "getSettings",
      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
@@ -58,8 +70,12 @@
    ```json
    {
      "name": "标准 WebView Client Hook 点",
+     "version": 1,
+     "remark": "",
+     "require": 0,
      "Class_WebView": "android.webkit.WebView",
      "Class_WebViewClient": "android.webkit.WebViewClient",
+     "Method_onPageStarted": "onPageStarted",
      "Method_onPageFinished": "onPageFinished",
      "Method_evaluateJavascript": "evaluateJavascript",
      "Class_ValueCallback": "android.webkit.ValueCallback"
@@ -69,6 +85,9 @@
    ```json
    {
      "name": "标准 UC_U4 内核替换 Hook 点",
+     "version": 1,
+     "remark": "",
+     "require": 0,
      "Class_UcServiceSetup": "com.alipay.mobile.nebulauc.impl.UcServiceSetup",
      "Method_updateUCVersionAndSdcardPath": "updateUCVersionAndSdcardPath",
      "Field_sInitUcFromSdcardPath": "sInitUcFromSdcardPath"
@@ -78,6 +97,9 @@
    ```json
    {
      "name": "标准 CrossWalk Hook 点",
+     "version": 1,
+     "remark": "",
+     "require": 0,
      "Class_XWalkView": "org.xwalk.core.XWalkView",
      "Method_getSettings": "getSettings",
      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
@@ -86,10 +108,14 @@
      "Class_XWalkPreferences": "org.xwalk.core.XWalkPreferences",
      "Method_setValue": "setValue"
    }
-5. `hookXWebPreferences`
+   ```
+6. `hookXWebPreferences`
    ```json
    {
      "name": "标准 XWeb Preferences Hook 点",
+     "version": 1,
+     "remark": "",
+     "require": 0,
      "Class_XWebPreferences": "org.xwalk.core.Preferences",
      "Method_setValue": "setValue"
    }
@@ -99,6 +125,19 @@
 2. [TBS X5](rules/cn.wankkoree.test.tbsx5)
 3. [UC U4](rules/com.mpaas.demo)
 4. [CrossWalk](rules/cn.wankkoree.test.crosswalk)
+
+## 一些说明
+
+- `Method_xxx`的参数值可以有两种格式：
+  - 纯方法名，如`onPageFinished`
+    - 此时类中所有的`onPageFinished`方法都会被 hook
+  - 方法名+方法参数类型，如`onPageFinished(android.webkit.WebView,java.lang.String)`
+    - 此时只有传参形如`(WebView, String)`的`onPageFinished`方法才会被 hook
+    - 如果无参数，则写作`onPageFinished()`，表示只有传参形如`()`的`onPageFinished`方法才会被 hook
+- 规则的参数不是必须的，未设定值的参数将使用模块中内置的默认值
+  - 何为未设定：
+    - `"Class": "123"`、`"Class": ""`，这都是已设定的情况
+    - `"Class": null`、没写这个参数，这都是未设定的情况
 
 ## 一些使用条件
 

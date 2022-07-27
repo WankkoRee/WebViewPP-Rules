@@ -2,6 +2,9 @@
   "hookCrossWalk": [
     {
       "name": "标准 CrossWalk 规则集 hookCrossWalk",
+      "version": 1,
+      "remark": "",
+      "require": 0,
       "Class_XWalkView": "org.xwalk.core.XWalkView",
       "Method_getSettings": "getSettings",
       "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
@@ -14,8 +17,12 @@
   "hookWebViewClient": [
     {
       "name": "标准 CrossWalk 规则集 hookWebViewClient",
+      "version": 1,
+      "remark": "",
+      "require": 0,
       "Class_WebView": "org.xwalk.core.XWalkView",
       "Class_WebViewClient": "org.xwalk.core.XWalkResourceClient",
+      "Method_onPageStarted": "onLoadStarted",
       "Method_onPageFinished": "onLoadFinished",
       "Method_evaluateJavascript": "evaluateJavascript",
       "Class_ValueCallback": "android.webkit.ValueCallback"
