@@ -2,13 +2,13 @@
   "hookWebView": [
     {
       "name": "标准 WebView 规则集 hookWebView",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
+      "require": 13,
       "Class_WebView": "android.webkit.WebView",
-      "Method_getSettings": "getSettings",
-      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
-      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_getSettings": "getSettings()",
+      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled(bool)",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled(bool)",
       "Method_loadUrl": "loadUrl",
       "Method_setWebViewClient": "setWebViewClient"
     }
@@ -16,14 +16,13 @@
   "hookWebViewClient": [
     {
       "name": "特殊 WebView 规则集 hookWebViewClient",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
-      "Class_WebView": "android.webkit.WebView",
+      "require": 13,
       "Class_WebViewClient": "com.tencent.qqmail.activity.readmail.ReadMailFragment$69",
-      "Method_onPageFinished": "onSafePageFinished",
-      "Method_evaluateJavascript": "evaluateJavascript",
-      "Class_ValueCallback": "android.webkit.ValueCallback"
+      "Method_onPageFinished": "onSafePageFinished(android.webkit.WebView,str)",
+      "Class_WebView": "android.webkit.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
     }
   ]
 }

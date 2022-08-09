@@ -127,12 +127,20 @@
 
 ## 一些说明
 
-- `Method_xxx`的参数值可以有两种格式：
-  - 纯方法名，如`onPageFinished`
-    - 此时类中所有的`onPageFinished`方法都会被 hook
-  - 方法名+方法参数类型，如`onPageFinished(android.webkit.WebView,java.lang.String)`
-    - 此时只有传参形如`(WebView, String)`的`onPageFinished`方法才会被 hook
-    - 如果无参数，则写作`onPageFinished()`，表示只有传参形如`()`的`onPageFinished`方法才会被 hook
+- `Method_xxx`的参数值可以有如下几种格式：
+  1. 纯方法名，如`onPageFinished`
+     - 此时类中所有的`onPageFinished`方法都会被 hook
+  2. 方法名+传参类型，如`onPageFinished(android.webkit.WebView,str)`
+     - 此时只有传参形如`(WebView, String)`的`onPageFinished`方法才会被 hook
+     - 如果无传参，则写作`onPageFinished()`，表示只有传参形如`()`的`onPageFinished`方法才会被 hook
+  3. 返回类型+方法名，如`(void)onPageFinished`
+     - 此时类中只有返回类型为`void`的`onPageFinished`方法才会被 hook
+  4. 返回类型+方法名+传参类型，如`(void)onPageFinished(android.webkit.WebView,str)`
+     - 此时只有传参形如`(WebView, String)`且返回类型为`void`的`onPageFinished`方法才会被 hook
+     - 通常无此必要，因为当传参类型已经确定时，返回类型不存在多种可能性
+  - 对于类型的描述合法性，具体可见[Factory.kt at master · WankkoRee/EnableWebViewDebugging](https://github.com/WankkoRee/EnableWebViewDebugging/blob/master/app/src/main/java/cn/wankkoree/xposed/enablewebviewdebugging/hook/Factory.kt)中的`String.typeConvert()`函数
+    - 对于未列于其中的类型，请统一带上完整包名，如`WebView`类应写为`android.webkit.WebView`
+    - 对于大小写不敏感
 - 规则的参数不是必须的，未设定值的参数将使用模块中内置的默认值
   - 何为未设定：
     - `"Class": "123"`、`"Class": ""`，这都是已设定的情况
