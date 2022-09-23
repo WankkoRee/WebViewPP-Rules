@@ -1,0 +1,19 @@
+{
+  "hookXWebPreferences": [
+    {
+      "name": "微信 XWeb 规则集 hookXWebPreferences",
+      "Class_XWebPreferences": "com.tencent.xwalk.XWebPreferences",
+      "Method_setValue": "setValue"
+    }
+  ],
+  "hookWebViewClient": [
+    {
+      "name": "微信 XWeb 规则集 hookWebViewClient",
+      "Class_WebView": "com.tencent.xweb.WebView",
+      "Class_WebViewClient": "com.tencent.xweb.WebViewClient",
+      "Method_onPageFinished": "onPageFinished",
+      "Method_evaluateJavascript": "evaluateJavascript",
+      "Class_ValueCallback": "android.webkit.ValueCallback"
+    }
+  ]
+}
