@@ -2,18 +2,23 @@
   "hookXWebPreferences": [
     {
       "name": "微信 XWeb 规则集 hookXWebPreferences",
-      "Class_XWebPreferences": "com.tencent.xwalk.XWebPreferences",
-      "Method_setValue": "setValue"
+      "version": 2,
+      "remark": "",
+      "require": 13,
+      "Class_XWebPreferences": "org.xwalk.core.XWalkPreferences",
+      "Method_setValue": "setValue(str,bool)"
     }
   ],
   "hookWebViewClient": [
     {
       "name": "微信 XWeb 规则集 hookWebViewClient",
-      "Class_WebView": "com.tencent.xweb.WebView",
+      "version": 7,
+      "remark": "",
+      "require": 13,
       "Class_WebViewClient": "com.tencent.xweb.WebViewClient",
-      "Method_onPageFinished": "onPageFinished",
-      "Method_evaluateJavascript": "evaluateJavascript",
-      "Class_ValueCallback": "android.webkit.ValueCallback"
+      "Method_onPageFinished": "onPageFinished(com.tencent.xweb.WebView,java.lang.String)",
+      "Class_WebView": "com.tencent.xweb.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
     }
   ]
 }

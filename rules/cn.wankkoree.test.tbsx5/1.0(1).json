@@ -2,13 +2,13 @@
   "hookWebView": [
     {
       "name": "标准 TBS X5 规则集 hookWebView",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
+      "require": 13,
       "Class_WebView": "com.tencent.smtt.sdk.WebView",
-      "Method_getSettings": "getSettings",
-      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled",
-      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_getSettings": "getSettings()",
+      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled(bool)",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled(bool)",
       "Method_loadUrl": "loadUrl",
       "Method_setWebViewClient": "setWebViewClient"
     }
@@ -16,14 +16,13 @@
   "hookWebViewClient": [
     {
       "name": "标准 TBS X5 规则集 hookWebViewClient",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
-      "Class_WebView": "com.tencent.smtt.sdk.WebView",
+      "require": 13,
       "Class_WebViewClient": "com.tencent.smtt.sdk.WebViewClient",
-      "Method_onPageFinished": "onPageFinished",
-      "Method_evaluateJavascript": "evaluateJavascript",
-      "Class_ValueCallback": "com.tencent.smtt.sdk.ValueCallback"
+      "Method_onPageFinished": "onPageFinished(com.tencent.smtt.sdk.WebView,str)",
+      "Class_WebView": "com.tencent.smtt.sdk.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,com.tencent.smtt.sdk.ValueCallback)"
     }
   ]
 }

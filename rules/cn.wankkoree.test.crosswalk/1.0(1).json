@@ -2,29 +2,28 @@
   "hookCrossWalk": [
     {
       "name": "标准 CrossWalk 规则集 hookCrossWalk",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
+      "require": 13,
       "Class_XWalkView": "org.xwalk.core.XWalkView",
-      "Method_getSettings": "getSettings",
-      "Method_setJavaScriptEnabled": "setJavaScriptEnabled",
+      "Method_getSettings": "getSettings()",
+      "Method_setJavaScriptEnabled": "setJavaScriptEnabled(bool)",
       "Method_loadUrl": "loadUrl",
       "Method_setResourceClient": "setResourceClient",
       "Class_XWalkPreferences": "org.xwalk.core.XWalkPreferences",
-      "Method_setValue": "setValue"
+      "Method_setValue": "setValue(str,bool)"
     }
   ],
   "hookWebViewClient": [
     {
       "name": "标准 CrossWalk 规则集 hookWebViewClient",
-      "version": 1,
+      "version": 2,
       "remark": "",
-      "require": 0,
-      "Class_WebView": "org.xwalk.core.XWalkView",
+      "require": 13,
       "Class_WebViewClient": "org.xwalk.core.XWalkResourceClient",
-      "Method_onPageFinished": "onLoadFinished",
-      "Method_evaluateJavascript": "evaluateJavascript",
-      "Class_ValueCallback": "android.webkit.ValueCallback"
+      "Method_onPageFinished": "onLoadFinished(org.xwalk.core.XWalkView,str)",
+      "Class_WebView": "org.xwalk.core.XWalkView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
     }
   ]
 }
