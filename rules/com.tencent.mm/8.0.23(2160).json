@@ -12,7 +12,7 @@
   "hookWebViewClient": [
     {
       "name": "微信 XWeb 规则集 hookWebViewClient",
-      "version": 2,
+      "version": 5,
       "remark": "",
       "require": 13,
       "Class_WebViewClient": "com.tencent.xweb.am",

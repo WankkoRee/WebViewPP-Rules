@@ -1,9 +1,9 @@
 {
   "hookXWebPreferences": [
     {
-      "name": "微信 XWeb 规则集 hookXWebPreferences",
+      "name": "微信Play版 XWeb 规则集 hookXWebPreferences",
       "version": 2,
-      "remark": "本规则针对Play版本",
+      "remark": "",
       "require": 13,
       "Class_XWebPreferences": "org.xwalk.core.XWalkPreferences",
       "Method_setValue": "setValue(str,bool)"
@@ -11,8 +11,8 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "微信 XWeb 规则集 hookWebViewClient",
-      "version": 2,
+      "name": "微信Play版 XWeb 规则集 hookWebViewClient",
+      "version": 3,
       "remark": "",
       "require": 13,
       "Class_WebViewClient": "com.tencent.xweb.ah",

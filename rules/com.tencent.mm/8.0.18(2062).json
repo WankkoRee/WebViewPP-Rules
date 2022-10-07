@@ -1,7 +1,7 @@
 {
   "hookXWebPreferences": [
     {
-      "name": "微信 XWeb 规则集 hookXWebPreferences",
+      "name": "微信Play版 XWeb 规则集 hookXWebPreferences",
       "version": 2,
       "remark": "本规则针对Play版本",
       "require": 13,
@@ -11,7 +11,7 @@
   ],
   "hookWebViewClient": [
     {
-      "name": "微信 XWeb 规则集 hookWebViewClient",
+      "name": "微信Play版 XWeb 规则集 hookWebViewClient",
       "version": 2,
       "remark": "",
       "require": 13,
