@@ -1,4 +1,4 @@
-# EnableWebViewDebugging-Rules [启用 WebView 调试的规则库]
+# WebViewPP-Rules [启用 WebView 调试的规则库]
 
 ## 如何提交
 
@@ -138,7 +138,7 @@
   4. 返回类型+方法名+传参类型，如`(void)onPageFinished(android.webkit.WebView,str)`
      - 此时只有传参形如`(WebView, String)`且返回类型为`void`的`onPageFinished`方法才会被 hook
      - 通常无此必要，因为当传参类型已经确定时，返回类型不存在多种可能性
-  - 对于类型的描述合法性，具体可见[Factory.kt at master · WankkoRee/EnableWebViewDebugging](https://github.com/WankkoRee/EnableWebViewDebugging/blob/master/app/src/main/java/cn/wankkoree/xposed/enablewebviewdebugging/hook/Factory.kt)中的`String.typeConvert()`函数
+  - 对于类型的描述合法性，具体可见[Factory.kt at master · WankkoRee/WebViewPP](https://github.com/WankkoRee/WebViewPP/blob/master/app/src/main/java/cn/wankkoree/xp/webviewpp/hook/Factory.kt)中的`String.typeConvert()`函数
     - 对于未列于其中的类型，请统一带上完整包名，如`WebView`类应写为`android.webkit.WebView`
     - 对于大小写不敏感
 - 规则的参数不是必须的，未设定值的参数将使用模块中内置的默认值
