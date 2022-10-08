@@ -16,10 +16,10 @@
   "hookWebViewClient": [
     {
       "name": "特殊 WebView 规则集 hookWebViewClient",
-      "version": 3,
+      "version": 4,
       "remark": "",
       "require": 13,
-      "Class_WebViewClient": "cfb",
+      "Class_WebViewClient": "cll",
       "Method_onPageFinished": "onPageFinished(android.webkit.WebView,str)",
       "Class_WebView": "android.webkit.WebView",
       "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
