@@ -19,6 +19,16 @@
       "Method_onPageFinished": "onPageFinished(com.tencent.xweb.WebView,java.lang.String)",
       "Class_WebView": "com.tencent.xweb.WebView",
       "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
+    },
+    {
+      "name": "微信 XWeb 小程序规则集 hookWebViewClient",
+      "version": 1,
+      "remark": "针对小程序内嵌页面注入js",
+      "require": 13,
+      "Class_WebViewClient": "com.tencent.mm.plugin.appbrand.page.an$8",
+      "Method_onPageFinished": "onPageFinished(com.tencent.xweb.WebView,java.lang.String)",
+      "Class_WebView": "com.tencent.xweb.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
     }
   ]
 }
