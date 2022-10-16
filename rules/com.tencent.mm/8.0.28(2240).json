@@ -2,10 +2,10 @@
   "hookXWebPreferences": [
     {
       "name": "微信 XWeb 规则集 hookXWebPreferences",
-      "version": 2,
+      "version": 3,
       "remark": "",
       "require": 13,
-      "Class_XWebPreferences": "org.xwalk.core.XWalkPreferences",
+      "Class_XWebPreferences": "com.tencent.xweb.XWebPreferences,",
       "Method_setValue": "setValue(str,bool)"
     }
   ],
