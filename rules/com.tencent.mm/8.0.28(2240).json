@@ -5,7 +5,7 @@
       "version": 3,
       "remark": "",
       "require": 13,
-      "Class_XWebPreferences": "com.tencent.xweb.XWebPreferences,",
+      "Class_XWebPreferences": "com.tencent.xweb.XWebPreferences",
       "Method_setValue": "setValue(str,bool)"
     }
   ],
