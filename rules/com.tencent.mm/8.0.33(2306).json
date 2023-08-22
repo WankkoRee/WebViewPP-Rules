@@ -1,0 +1,38 @@
+{
+  "hookXWebView": [
+    {
+      "name": "微信Play版 XWeb 规则集 hookXWebView",
+      "version": 1,
+      "remark": "",
+      "require": 16,
+      "Class_XWebView": "com.tencent.xweb.WebView",
+      "Method_initWebviewCore": "(void)initWebviewCore",
+      "Method_isXWeb": "(bool)isXWebKernel()",
+      "Method_isSys": "(bool)isSysKernel()",
+      "Class_XWebPreferences": "com.tencent.xweb.XWebPreferences",
+      "Method_setValue": "setValue(str, bool)"
+    }
+  ],
+  "hookWebViewClient": [
+    {
+      "name": "微信Play版 XWeb 规则集 hookWebViewClient",
+      "version": 7,
+      "remark": "",
+      "require": 13,
+      "Class_WebViewClient": "com.tencent.xweb.WebViewClient",
+      "Method_onPageFinished": "onPageFinished(com.tencent.xweb.WebView,java.lang.String)",
+      "Class_WebView": "com.tencent.xweb.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
+    },
+    {
+      "name": "微信Play版 XWeb 小程序规则集 hookWebViewClient",
+      "version": 1,
+      "remark": "针对小程序内嵌页面注入js",
+      "require": 13,
+      "Class_WebViewClient": "com.tencent.mm.plugin.appbrand.page.v2$e",
+      "Method_onPageFinished": "onPageFinished(com.tencent.xweb.WebView,java.lang.String)",
+      "Class_WebView": "com.tencent.xweb.WebView",
+      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
+    }
+  ]
+}
