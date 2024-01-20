@@ -2,18 +2,6 @@
   "hookWebView": [
     {
       "name": "标准 UC U4 规则集 hookWebView",
-      "version": 2,
-      "remark": "",
-      "require": 13,
-      "Class_WebView": "com.uc.webview.export.WebView",
-      "Method_getSettings": "getSettings()",
-      "Method_setWebContentsDebuggingEnabled": "setWebContentsDebuggingEnabled(bool)",
-      "Method_setJavaScriptEnabled": "setJavaScriptEnabled(bool)",
-      "Method_loadUrl": "loadUrl",
-      "Method_setWebViewClient": "setWebViewClient"
-    },
-    {
-      "name": "标准 UC U4 规则集 hookWebView",
       "version": 3,
       "remark": "",
       "require": 13,
@@ -28,32 +16,12 @@
   "hookWebViewClient": [
     {
       "name": "标准 UC U4 规则集 hookWebViewClient",
-      "version": 2,
-      "remark": "",
-      "require": 13,
-      "Class_WebViewClient": "com.alipay.mobile.nebulauc.impl.UCWebViewClient",
-      "Method_onPageFinished": "onPageFinished(com.uc.webview.export.WebView,str)",
-      "Class_WebView": "com.uc.webview.export.WebView",
-      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
-    },
-    {
-      "name": "标准 UC U4 规则集 hookWebViewClient",
       "version": 3,
       "remark": "",
       "require": 13,
       "Class_WebViewClient": "com.alipay.mobile.nebulauc.impl.WVUCWebViewClient",
       "Method_onPageFinished": "onPageFinished(com.alipay.mobile.nebulauc.impl.WVUCWebView,str)",
       "Class_WebView": "com.alipay.mobile.nebulauc.impl.WVUCWebView",
-      "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
-    },
-    {
-      "name": "标准 UC U4 规则集 hookWebViewClient",
-      "version": 4,
-      "remark": "",
-      "require": 13,
-      "Class_WebViewClient": "com.uc.webview.export.WebViewClient",
-      "Method_onPageFinished": "onPageFinished(com.uc.webview.export.WebView,str)",
-      "Class_WebView": "com.uc.webview.export.WebView",
       "Method_evaluateJavascript": "evaluateJavascript(str,android.webkit.ValueCallback)"
     }
   ],
