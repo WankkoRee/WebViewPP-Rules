@@ -14,7 +14,7 @@
     },
     {
       "name": "标准 UC U4 规则集 hookWebView",
-      "version": 2,
+      "version": 3,
       "remark": "",
       "require": 13,
       "Class_WebView": "android.taobao.windvane.extra.uc.WVUCWebView",
@@ -38,7 +38,7 @@
     },
     {
       "name": "标准 UC U4 规则集 hookWebViewClient",
-      "version": 2,
+      "version": 3,
       "remark": "",
       "require": 13,
       "Class_WebViewClient": "com.alipay.mobile.nebulauc.impl.WVUCWebViewClient",
@@ -48,7 +48,7 @@
     },
     {
       "name": "标准 UC U4 规则集 hookWebViewClient",
-      "version": 2,
+      "version": 4,
       "remark": "",
       "require": 13,
       "Class_WebViewClient": "com.uc.webview.export.WebViewClient",
